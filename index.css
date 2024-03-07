@@ -4,51 +4,57 @@
 :root{
     font-size: 30px;
     scroll-behavior: smooth;
+    --plano-fundo:#ffffff;
+    --cor-primaria:#ffffff;
 }
-h1{
-
-    text-align: center;
-
-}
-    ul,h2,li,h3,h1 {
-        text-align: center;
-        color: rgb(232, 234, 236);
+[data-tema="light"]{
+    --plano-fundo:#ffffff;
+    --cor-primaria:#ffffff;
     }
+    [data-tema="dark"]{
+        --plano-fundo:#000000;
+        --cor-primaria:#000000;
+    }
+
+
+        
     body{
         width: 90vw;
         margin: auto;
-        font-size: 16px;
+        font-size : 16px;
     }
     ul,li{
-        color: rgb(255, 255, 255);
+        color: rgb(246, 76, 76);
     }
     section{
         padding: 40px;
     }
     section#apresentacao{
-        background-color: rgb(0, 0, 0);
-        font: size 3rem;  
+        background-color:var(--cor-primaria);
+        font-size: 1rem;
+        color: rgb(244, 69, 69) ;
+        
     }
     section#formacao-academica{
-        background-color: rgb(0, 0, 0);
+        background-color:var(--cor-primaria)
     }
     section#competencias{
-        background-color: rgb(0, 0, 0);
+        background-color: var(--cor-primaria)
     }
     Section#competencias-socioemocionais{
-       background-color: rgb(0, 0, 0); 
+       background-color:var(cor primaria)
     }
 
     section#idiomas{
-        background-color: rgb(0, 0, 0);
+        background-color: var(--cor-primaria)
     }
 
     section#experiencia{
-        background-color: rgb(0, 0, 0);
+        background-color: var(--cor-primaria)
     }
 
     section#tecnologias{
-        background-color: rgb(7, 7, 7);
+        background-color: var(--cor-primaria);
         display: flex;
         justify-content: space-evenly;
         
@@ -67,7 +73,8 @@ h1{
 
     }
     section#nome{
-        background-color: black;
+        background-color: var(--cor-primaria);
+        color: rgb(240, 66, 66);
     }
     li{
         line-height: 1,5;
@@ -83,27 +90,28 @@ h1{
     }
     h1{
         font-size: 2rem ;
-        text-shadow: wheat;
+        text-shadow: rgb(240, 58, 64);
     }
     body{
-        background-color: black;
+        background-color: var(--plano-fundo)
     }
     section{
-        color: rgb(220, 202, 202);
+        color: rgb(245, 107, 107);
     }
 
 
 
     article{
             width: 30%;
-            background-color: rgb(0, 0, 0);
+            background-color:var(--cor-primaria);
             margin: 30px;
         }
     .continue-lendo{
-            background-color: azure;
-            padding:  0,5rem
+            background: var(--cor-primaria);
+            padding:  .5rem;
         }
 
         .continue-lendo a {
             text-decoration: none;
+            color: rgb(152, 152, 172);
         }
